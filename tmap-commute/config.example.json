@@ -1,5 +1,6 @@
 {
   "appKey": "여기에-티맵-appKey",
+  "odsayKey": "여기에-ODsay-apiKey",
   "show": 3,
   "home": {
     "name": "집",
