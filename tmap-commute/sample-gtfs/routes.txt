@@ -1,0 +1,5 @@
+route_id,route_short_name,route_long_name,route_type
+BUS401,401,간선버스 401,3
+EXP9000,9000,광역버스 9000,3
+BUS500,500,간선버스 500,3
+SUB2,2호선,지하철 2호선,1
