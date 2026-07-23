@@ -1,0 +1,125 @@
+{
+  "metaData": {
+    "plan": {
+      "itineraries": [
+        {
+          "fare": { "regular": { "totalFare": 1550, "currency": { "symbol": "￦", "currency": "원" } } },
+          "totalTime": 2520,
+          "totalWalkTime": 480,
+          "transferCount": 1,
+          "totalDistance": 12400,
+          "pathType": 3,
+          "legs": [
+            {
+              "mode": "WALK",
+              "sectionTime": 240,
+              "distance": 280,
+              "start": { "name": "출발지" },
+              "end": { "name": "행복아파트 정류장" }
+            },
+            {
+              "mode": "BUS",
+              "route": "간선:401",
+              "sectionTime": 600,
+              "distance": 3100,
+              "start": { "name": "행복아파트" },
+              "end": { "name": "역삼역" },
+              "passStopList": { "stationList": [{}, {}, {}, {}, {}, {}] }
+            },
+            {
+              "mode": "SUBWAY",
+              "route": "수도권2호선",
+              "sectionTime": 1440,
+              "distance": 8700,
+              "start": { "name": "역삼" },
+              "end": { "name": "시청" },
+              "passStopList": { "stationList": [{}, {}, {}, {}, {}, {}, {}, {}, {}] }
+            },
+            {
+              "mode": "WALK",
+              "sectionTime": 240,
+              "distance": 250,
+              "start": { "name": "시청역" },
+              "end": { "name": "도착지" }
+            }
+          ]
+        },
+        {
+          "fare": { "regular": { "totalFare": 1400, "currency": { "symbol": "￦", "currency": "원" } } },
+          "totalTime": 2940,
+          "totalWalkTime": 720,
+          "transferCount": 0,
+          "totalDistance": 11800,
+          "pathType": 1,
+          "legs": [
+            {
+              "mode": "WALK",
+              "sectionTime": 480,
+              "distance": 560,
+              "start": { "name": "출발지" },
+              "end": { "name": "역삼역 3번출구" }
+            },
+            {
+              "mode": "SUBWAY",
+              "route": "수도권2호선",
+              "sectionTime": 2220,
+              "distance": 11000,
+              "start": { "name": "역삼" },
+              "end": { "name": "시청" },
+              "passStopList": { "stationList": [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}] }
+            },
+            {
+              "mode": "WALK",
+              "sectionTime": 240,
+              "distance": 250,
+              "start": { "name": "시청역" },
+              "end": { "name": "도착지" }
+            }
+          ]
+        },
+        {
+          "fare": { "regular": { "totalFare": 1500, "currency": { "symbol": "￦", "currency": "원" } } },
+          "totalTime": 3300,
+          "totalWalkTime": 300,
+          "transferCount": 2,
+          "totalDistance": 13100,
+          "pathType": 2,
+          "legs": [
+            {
+              "mode": "WALK",
+              "sectionTime": 120,
+              "distance": 130,
+              "start": { "name": "출발지" },
+              "end": { "name": "행복아파트 정류장" }
+            },
+            {
+              "mode": "BUS",
+              "route": "지선:3412",
+              "sectionTime": 900,
+              "distance": 4200,
+              "start": { "name": "행복아파트" },
+              "end": { "name": "강남역" },
+              "passStopList": { "stationList": [{}, {}, {}, {}, {}, {}, {}, {}] }
+            },
+            {
+              "mode": "BUS",
+              "route": "간선:140",
+              "sectionTime": 1980,
+              "distance": 8500,
+              "start": { "name": "강남역" },
+              "end": { "name": "시청앞" },
+              "passStopList": { "stationList": [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}] }
+            },
+            {
+              "mode": "WALK",
+              "sectionTime": 180,
+              "distance": 200,
+              "start": { "name": "시청앞" },
+              "end": { "name": "도착지" }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

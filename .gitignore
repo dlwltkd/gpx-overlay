@@ -23,3 +23,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# tmap-commute: 집/회사 좌표와 API 키가 든 개인 설정
+tmap-commute/config.json
