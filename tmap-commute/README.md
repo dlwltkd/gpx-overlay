@@ -18,6 +18,21 @@
 다시 줄 세운 뒤 1등을 보여줍니다. 걸어가는 사이에 버스가 가버리는
 경우까지 계산해서 그땐 다음 차 기준으로 잡습니다.
 
+### 설정 (config.json을 직접 열 필요 없음)
+
+```bash
+node now.js set key  <ODsay키>                    # lab.odsay.com 에서 발급
+node now.js set home 37.5647128, 126.9321536      # 지도에서 복사한 좌표 그대로
+node now.js set work 37.4979, 127.0276
+node now.js show                                  # 현재 설정 확인
+```
+
+좌표는 구글맵에서 위치를 **우클릭**하면 나오는 숫자를 그대로 붙여넣으면 됩니다.
+위도/경도 순서가 뒤바뀌면 자동으로 바로잡고, 집·회사가 700m 이내면
+(ODsay가 경로를 주지 않는 거리) 호출 전에 미리 알려줍니다.
+
+### 실행
+
 ```bash
 node now.js          # 오전이면 출근, 오후면 퇴근 자동
 node now.js 출근
@@ -40,9 +55,9 @@ node now.js 출근 --debug   # ODsay 원본 응답 확인 (첫 실행 시 필드
    놓치면 이걸로 — 08:52 도착 예상 ...
 ```
 
-설정: [lab.odsay.com](https://lab.odsay.com) 가입 → API 키 발급(무료,
-하루 1,000회) → `config.json`의 `odsayKey`에 입력. 좌표는 아래
-`commute.js search` 또는 지도 앱에서 복사.
+> ODsay 키 신청 시 **서비스 플랫폼 환경은 `Server`** 를 선택하고, 실행할
+> PC의 공인 IP를 등록합니다 (IP 확인: `curl ifconfig.me`). 휴대폰 데이터는
+> IP가 자주 바뀌므로 집/회사 와이파이에서 쓰는 편이 안정적입니다.
 
 > 참고: ODsay 실시간 응답의 필드가 지역(서울/경기/지방)에 따라 조금
 > 다를 수 있습니다. 첫 실행에서 실시간 정보가 안 잡히면 `--debug`로
